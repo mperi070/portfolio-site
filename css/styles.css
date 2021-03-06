@@ -1,7 +1,7 @@
 :root {
     --body: #c6a9a3;
-    --primary-color: #ebd8b7;
-    --link-hover-color: #9a8194;
+    --primary-color: #489c79;
+    --link-hover-color: #000000;
     --button-color: #489c79;
     --button-text: #ffffff;
     --light-grey: #e7e6e1;
@@ -21,7 +21,7 @@ body {
     display: flex;
     width: 100%;
     padding: 10px;
-    border-bottom: 1px solid;
+    border-bottom: 1px dashed;
 }
 
 .page-header__item {
@@ -92,7 +92,7 @@ p {
 
 .profile, .section-about, .animation-svg  {
     max-width: 700px;
-    margin: 0 auto; /*centers the container in the middle of the page*/
+    margin: 0 auto; /*centers the container*/
     text-align: justify;
 }
 
@@ -134,7 +134,10 @@ p {
         width: auto;
         min-height: auto;
         margin: 0;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        border: 3px solid;
+        border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
+        font-family: 'Courier New', monospace;
+        animation: moveGradient 4s infinite alternate linear;
     }
 }
 
@@ -190,6 +193,12 @@ p {
 
 .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 @media all and (max-width: 500px) {
