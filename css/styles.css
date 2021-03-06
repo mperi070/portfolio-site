@@ -77,6 +77,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 main {
     min-height: calc(100vh - 100px - 150px);
+    display: flex;
+    align-items: center;
 }
 
 h1 {
