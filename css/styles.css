@@ -161,6 +161,49 @@ table, th, td {
     }
 }
 
+/*---CONTACT PAGE---*/
+@supports (display: grid) {
+    #contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: .5rem;
+    }
+
+    .contact-form__email {
+        grid-column: 1 / span 1;
+    }
+
+    .contact-form__phone {
+        grid-column: 2 / span 1;
+    }
+
+    #contact-form button {
+        grid-column: 1 / span 2;
+    }
+
+    .contact-form__message {
+        grid-column: 1 / span 2;
+    }
+
+    .contact-info {
+        grid-column: 3 / span 2;
+    }
+}
+
+#contact-form > element {
+    padding: 0;
+    margin: 0;
+}
+
+input, textarea {
+    background-color: var(--light-grey);
+    padding: 0.25rem;
+    border: 1px solid #000000;
+    min-height: 40px;
+    width: 100%;
+}
+
 /*---KEYFRAME ANIMATIONS---*/
 
 @keyframes color-change {

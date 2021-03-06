@@ -35,38 +35,34 @@
             </nav>
         </header>
         <main>
-            <section class="contact">
-                <div class="contact__container">
-                    <form action="#" method="post" id="contact-form">
-                        <div class="contact-form__email">
-                            <label for="contact-email" class="standard-label">
-                                Email: <span class="subtitle">(Required)</span>
-                            </label>
-                            <input id="contact-email" type="email" placeholder="youremail@us.com" required>
-                        </div>
-                        
-                        <div class="contact-form__phone">
-                            <label for="contact-phone" class="standard-label">
-                                Telephone: <span class="subtitle">(Required)</span>
-                            </label>
-                            <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890" required>
-                        </div>
-                        
-                        <div class="contact-form__message">
-                            <label for="contact-message" class="standard-label">
-                                Message: <span class="subtitle">(max 240 characters)</span>
-                            </label>
-                            <textarea id="contact-message" placeholder="Enter your message here" maxlength="240" required ></textarea>
-                        </div>
-                        <input id="contact-message" type="submit" value="Send message">
-                      </form>
-                      <div class="contact-me">
-                        <a href="tel:+13476050044">Call Me</a><br>
-                        <a href="mailto:mperies1109@gmail.com">Email Me</a>
-                    </div>
+            <form action="#" method="post" id="contact-form">
+                <div class="contact-form__email">
+                    <label for="contact-email" class="standard-label">
+                        Email:
+                    </label>
+                    <input id="contact-email" type="email" placeholder="youremail@us.com" required>
                 </div>
-            </section>
-            
+                
+                <div class="contact-form__phone">
+                    <label for="contact-phone" class="standard-label">
+                        Telephone:
+                    </label>
+                    <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890" required>
+                </div>
+                
+                <div class="contact-form__message">
+                    <label for="contact-message" class="standard-label">
+                        Message:
+                    </label>
+                    <textarea id="contact-message" placeholder="Enter your message - max 240 characters" maxlength="240" required ></textarea>
+                </div>
+                <button type="submit" value="Send message">SUBMIT</button>
+                </form>
+                
+                <div class="contact__info">
+                    <a href="tel:+13476050044">Call Me</a><br>
+                    <a href="mailto:mperies1109@gmail.com">Email Me</a>
+                </div>
         </main>
 
         
