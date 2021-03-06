@@ -1,6 +1,6 @@
 :root {
     --body: #c6a9a3;
-    --primary-color: #489c79;
+    --primary-color: #2f8d66;
     --link-hover-color: #000000;
     --button-color: #489c79;
     --button-text: #ffffff;
@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--body);
-    font-family: 'Truculenta', sans-serif;
+    font-family: 'Open Sans',sans-serif;
 }
 
 .page-header {
@@ -110,7 +110,7 @@ p {
 
 .profile__picture {
     float: left;
-    margin-right: 40px;
+    margin-right: 2.5rem;
     border-radius: 50%; /*turns image to circle*/
 }
 
