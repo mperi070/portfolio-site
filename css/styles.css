@@ -87,13 +87,13 @@ h1 {
 
 p {
     font-size: 20px;
-    line-height: var(--line-height);
+    /* line-height: var(--line-height); */
 }
 
 .profile, .section-about, .animation-svg  {
     max-width: 700px;
     margin: 0 auto; /*centers the container*/
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .table-experience {
@@ -110,7 +110,7 @@ p {
 
 .profile__picture {
     float: left;
-    margin-right: 2.5rem;
+    margin-right: 1.5rem;
     border-radius: 50%; /*turns image to circle*/
 }
 
