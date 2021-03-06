@@ -34,39 +34,42 @@
                 </ul>
             </nav>
         </header>
-
-        <h1>Contact</h1>
-
         <main>
-            <div>
-                Melani Peries<br>
-                884 Van Duzer Street <br>
-                Staten Island, NY 10304<br>
-                United States<br>
-                <br>
-                <a href="tel:+13476050044">Tel +1 347-605-0044</a><br>
-                <a href="mailto:mperies1109@gmail.com">mperies1109@gmail.com</a><br>
-                <a href="mailto:mperies1109@gmail.com">Contact Me</a>
-            </div>
+            <section class="contact">
+                <div class="contact__container">
+                    <form action="#" method="post" id="contact-form">
+                        <div class="contact-form__email">
+                            <label for="contact-email" class="standard-label">
+                                Email: <span class="subtitle">(Required)</span>
+                            </label>
+                            <input id="contact-email" type="email" placeholder="youremail@us.com" required>
+                        </div>
+                        
+                        <div class="contact-form__phone">
+                            <label for="contact-phone" class="standard-label">
+                                Telephone: <span class="subtitle">(Required)</span>
+                            </label>
+                            <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890" required>
+                        </div>
+                        
+                        <div class="contact-form__message">
+                            <label for="contact-message" class="standard-label">
+                                Message: <span class="subtitle">(max 240 characters)</span>
+                            </label>
+                            <textarea id="contact-message" placeholder="Enter your message here" maxlength="240" required ></textarea>
+                        </div>
+                        <input id="contact-message" type="submit" value="Send message">
+                      </form>
+                      <div class="contact-me">
+                        <a href="tel:+13476050044">Call Me</a><br>
+                        <a href="mailto:mperies1109@gmail.com">Email Me</a>
+                    </div>
+                </div>
+            </section>
+            
         </main>
 
-        <form action="" method="post" id="contact-form">
-            <label for="contact-email" class="standard-label">
-                Email: 
-            </label>
-            <input id="contact-email" type="email" required>
-          
-            <label for="contact-phone" class="standard-label">
-                Telephone: 
-            </label>
-            <input id="contact-phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-          
-            <label for="contact-message" class="standard-label">
-                Message: 
-            </label>
-            <textarea id="contact-message" required maxlength="240"></textarea>
-            <input id="contact-message" type="submit" value="Send message">
-          </form>
+        
 
           <footer class="page-footer">
             <p>Find me on</p>
