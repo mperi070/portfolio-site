@@ -93,13 +93,21 @@ p {
 .profile, .section-about, .animation-svg  {
     max-width: 700px;
     margin: 0 auto; /*centers the container*/
-    /* text-align: justify; */
+    text-align: justify;
+}
+
+.section-about {
+    font-family: Helvetica, sans-serif;
 }
 
 .table-experience {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+table, th, td {
+    border: 1px solid #000000;
 }
 
 .thebutton {
