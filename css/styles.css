@@ -97,7 +97,7 @@ h1 {
     line-height: 13%;
 }
 
-p {
+.profile-text {
     font-size: 20px;
     line-height: var(--line-height);
 }
@@ -115,6 +115,9 @@ p {
 }
 
 /*---ABOUT PAGE---*/
+.section-about {
+    font-size: 15px;
+}
 
 .table-experience {
     display: flex;
