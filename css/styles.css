@@ -138,6 +138,13 @@ table, th, td {
 
 /*---WORK PAGE---*/
 
+.h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: blink-title 1s step-end infinite, typing 3s steps(16, end);
+}
+
 /* start grid fallback */
 .grid__item {
     display: inline-block;
@@ -221,6 +228,17 @@ input, textarea {
 } */
 
 /*---KEYFRAME ANIMATIONS---*/
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-title {
+    0%,
+    100%  {border-color: transparent;}
+    50% {border-color: #000000;}
+}
 
 @keyframes color-change {
     0% {
