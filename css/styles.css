@@ -223,6 +223,7 @@ input, textarea {
     border: 1px solid #000000;
     min-height: 40px;
     width: 100%;
+    caret-color: var(--primary-color);
 }
 
 .contact__info {
