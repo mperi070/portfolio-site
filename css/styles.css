@@ -250,6 +250,7 @@ table, th, td {
         border: 3px solid;
         border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
         font-family: 'Courier New', monospace;
+        text-align: center;
     }
 }
 
