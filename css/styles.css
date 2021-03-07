@@ -113,6 +113,10 @@ p {
     float: left;
     margin-right: 1.5rem;
     border-radius: 50%; /*turns image to circle*/
+    box-shadow: 0 0 30px #ffffff, -30px 0 95px #CC3333, 30px 0 95px #ffffff,
+    0 0 60px #ffffff, 60px 0 95px #CC3333, -60px 0 95px #ffffff, 
+    60px 0 400px #CC3333, -60px 0 400px #ffffff;
+    animation: pulse 6s linear infinite;
 }
 
 /*---ABOUT PAGE---*/
@@ -208,10 +212,6 @@ table, th, td {
     }
 }
 
-/* .contact-main {
-    padding: 2rem;
-} */
-
 #contact-form > element {
     padding: 0;
     margin: 0;
@@ -235,6 +235,14 @@ input, textarea {
 }
 
 /*---KEYFRAME ANIMATIONS---*/
+
+@keyframes pulse {
+    50% {
+        box-shadow: 0 0 30px #ffffff, 30px 0 95px #CC3333, -30px 0 95px #ffffff,
+        0 0 60px #ffffff, -60px 0 95px #CC3333, 60px 0 95px #ffffff, 
+        -60px 0 400px #CC3333, 60px 0 400px #ffffff;
+    }
+}
 
 @keyframes typing {
     from { width: 0; }
