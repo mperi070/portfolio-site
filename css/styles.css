@@ -1,8 +1,8 @@
 :root {
-    --body: #c6a9a3;
-    --primary-color: #2f8d66;
+    --body: #F7F7F7;
+    --primary-color: #D48166;
     --link-hover-color: #000000;
-    --button-color: #489c79;
+    --button-color: #D48166;
     --button-text: #ffffff;
     --light-grey: #e7e6e1;
     --line-height: normal;
@@ -23,7 +23,6 @@ body {
     display: flex;
     width: 100%;
     padding: 3px;
-    border-bottom: 1px solid;
 }
 
 .page-header__item {
@@ -51,7 +50,9 @@ a {
 }
   
   a:hover, a:focus {
-    text-decoration: none;
+    padding: .2em;
+    border: 0.5px solid var(--primary-color);
+    border-radius: 5px;
     color: var(--link-hover-color);
 }
 
