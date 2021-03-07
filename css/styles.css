@@ -97,7 +97,7 @@ h1 {
     line-height: 13%;
 }
 
-.profile-text {
+p {
     font-size: 20px;
     line-height: var(--line-height);
 }
