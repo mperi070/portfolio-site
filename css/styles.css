@@ -113,7 +113,7 @@ p {
     line-height: var(--line-height);
 }
 
-.profile, .section-about {
+.profile {
     max-width: 700px;
     margin: 0 auto; /*centers the container*/
     text-align: justify;
@@ -130,8 +130,9 @@ p {
 }
 
 /*---ABOUT PAGE---*/
-.section-about {
+.section-about__text {
     font-size: 15px;
+    text-align: justify;
 }
 
 .table-experience {
@@ -148,7 +149,7 @@ table, th, td {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 0.5%;
+    padding-top: 1%;
 }
 
 .computer-icon-wrapper {
@@ -179,9 +180,9 @@ table, th, td {
              fill-animation 0.3s 2.5s ease-in forwards;
  }
   
-  /* ALL ICONS ELEMENTS */
-  
-   /* Additional elements */
+            /* ALL ICONS ELEMENTS */
+            
+            /* Additional elements */
  
 #background-circle {
       fill-opacity: 0;
@@ -216,6 +217,25 @@ table, th, td {
      stroke-dashoffset: 800;
      stroke-dasharray: 800;
      animation: stroke-animation 2s 2.5s ease-in forwards;
+ }
+
+ @supports (display: grid) {
+     .about-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0;
+     }
+
+     .section-about__text {
+         grid-column: 1 / span 2;
+     }
+
+     .section-about__table {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
+     }
  }
 
 /*---WORK PAGE---*/
