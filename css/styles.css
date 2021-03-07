@@ -113,7 +113,7 @@ p {
     line-height: var(--line-height);
 }
 
-.profile, .section-about, .animation-svg  {
+.profile, .section-about {
     max-width: 700px;
     margin: 0 auto; /*centers the container*/
     text-align: justify;
@@ -150,6 +150,73 @@ table, th, td {
     align-items: center;
     padding-top: 0.5%;
 }
+
+.computer-icon-wrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #computer {
+    stroke-dashoffset: 800;
+    stroke-dasharray: 800;
+    fill-opacity: 0;
+    animation: stroke-animation 1.5s 0.3s ease-in forwards;
+  }
+  
+  #screen-holder {
+    stroke-dashoffset: 800;
+    stroke-dasharray: 800;
+    fill-opacity: 0;
+    animation: stroke-animation 1.5s 1.1s ease-in forwards;
+  }
+  
+  #computer-screen {
+  stroke-dashoffset: 800;
+  stroke-dasharray: 800;
+  fill-opacity: 0;
+  animation: stroke-animation 1.5s 1s ease-in forwards,
+             fill-animation 0.3s 2.5s ease-in forwards;
+ }
+  
+  /* ALL ICONS ELEMENTS */
+  
+   /* Additional elements */
+ 
+#background-circle {
+      fill-opacity: 0;
+      animation: fill-animation 0.4s 2.7s ease-in forwards;
+ }
+ 
+ #shadow-line-screen-long {
+     stroke-dashoffset: 800;
+     stroke-dasharray: 800;
+     animation: stroke-animation 2s 2.5s ease-in forwards;
+ }
+ 
+ #shadow-line-screen-short {
+     stroke-dashoffset: 800;
+     stroke-dasharray: 800;
+     animation: stroke-animation 2s 2.5s ease-in forwards;
+ }
+ 
+ #line-bottom-dark {
+     stroke-dashoffset: 800;
+     stroke-dasharray: 800;
+     animation: stroke-animation 1.6s 2.3s ease-in forwards;
+ }
+ 
+ #shadow-line-bottom-long {
+     stroke-dashoffset: 800;
+     stroke-dasharray: 800;
+     animation: stroke-animation 2s 2.5s ease-in forwards;
+ }
+ 
+ #shadow-line-bottom-short {
+     stroke-dashoffset: 800;
+     stroke-dasharray: 800;
+     animation: stroke-animation 2s 2.5s ease-in forwards;
+ }
 
 /*---WORK PAGE---*/
 
@@ -267,6 +334,18 @@ input, textarea {
         -60px 0 400px #CC3333, 60px 0 400px #ffffff;
     }
 }
+
+@keyframes stroke-animation {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes fill-animation {
+    to {
+      fill-opacity: 1;
+    }
+  }
 
 @keyframes typing {
     from { width: 0; }
