@@ -90,6 +90,9 @@ button:hover, button:focus, .button:hover, .button:focus {
     flex-direction: column;
     text-align: center;
     height: 100px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer__img:hover, .footer__img:focus {
