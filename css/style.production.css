@@ -277,6 +277,13 @@ table, th, td {
              animation: stroke-animation 2s 2.5s ease-in forwards;
  }
 
+/* start grid fallback */
+.section-about__text, .section-about__table {
+    display: inline-block;
+    width: 33%;
+   }
+   /* end grid fallback */ 
+
  @supports (display: grid) {
      .about-main {
         display: -ms-grid;
@@ -370,6 +377,14 @@ table, th, td {
 }
 
 /*---CONTACT PAGE---*/
+
+/* start grid fallback */
+.contact-form__email, .contact-form__phone, .contact-form__message, .contact__info {
+    display: inline-block;
+    width: 33%;
+   }
+   /* end grid fallback */
+
 @supports (display: grid) {
     #contact-form {
         display: -ms-grid;
@@ -382,11 +397,7 @@ table, th, td {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-    }
-
-    #grid-contact-item {
-        width: auto;
-    }
+    } */
 
     .contact-form__email {
         -ms-grid-column: 2;
@@ -412,7 +423,7 @@ table, th, td {
         grid-column: 2 / span 2;
     }
 
-    .contact-info {
+    .contact__info {
         -ms-grid-column: 2;
         -ms-grid-column-span: 2;
         grid-column: 2 / span 2;
