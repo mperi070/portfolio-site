@@ -383,7 +383,7 @@ table, th, td {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-    } */
+    } 
 
     .contact-form__email {
         -ms-grid-column: 2;

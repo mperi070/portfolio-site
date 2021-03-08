@@ -287,7 +287,7 @@ table, th, td {
         margin: 0;
         padding-top: 3rem;
         justify-content: center;
-    } */
+    } 
 
     .contact-form__email {
         grid-column: 2 / span 1;
@@ -377,48 +377,6 @@ input, textarea {
     0%,
     100%  {border-color: transparent;}
     50% {border-color: #000000;}
-}
-
-@keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
-    }
-  }
-
-.sun {
-    animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
-
-.cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-
-.cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @keyframes draw {
